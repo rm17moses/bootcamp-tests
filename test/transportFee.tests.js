@@ -1,7 +1,13 @@
-describe('this test' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
+describe('Bootcamp transportFee function' , function(){
+    it('should return the right price based on the shift you are working' , function(){
+        assert.equal("R20", transportFee("morning"));
+    });
 
-        assert.deepEqual([2,2],[2,2]);
+    it('should return the right price based on the shift you are working' , function(){
+        assert.equal("R10", transportFee("afternoon"));
+    });
+
+    it('should return the right price based on the shift you are working' , function(){
+        assert.equal("free", transportFee("nightshift"));
     });
 });

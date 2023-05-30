@@ -1,7 +1,13 @@
-describe('this test' , function(){
-    it('should show you how to use MochaJS' , function(){
-        assert.equal(2,2);
+describe('Bootcamp greet function' , function(){
+    it('Should return greeting and name' , function(){
+        assert.equal("Hello, Moses", greet("Moses"))
+    });
 
-        assert.deepEqual([2,2],[2,2]);
+    it('Should return greeting and name' , function(){
+        assert.equal("Hello, Lebohang", greet("Lebohang"))
+    });
+
+    it('Should return greeting and name' , function(){
+        assert.equal("Hello, Tshepang", greet("Tshepang"))
     });
 });
